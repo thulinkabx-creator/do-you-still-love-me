@@ -76,6 +76,9 @@ for (let i = 0; i < 80; i++) {
     }, 3200);
 }
     document.body.innerHTML = `
+    setTimeout(() => {
+    alert("❤️ Thank you for choosing YES! ❤️");
+}, 1500);
     <div style="
         height:100vh;
         display:flex;
