@@ -55,7 +55,7 @@ Now prove it... ❤️
 </p>
 
 <a
-href="https://wa.me/YOURNUMBER?text=I%20still%20love%20you%20%E2%9D%A4%EF%B8%8F"
+href="https://wa.me/27604587216?text=I%20still%20love%20you%20%E2%9D%A4%EF%B8%8F"
 style="
 background:white;
 color:#ff4f87;
@@ -64,10 +64,10 @@ border-radius:30px;
 text-decoration:none;
 font-weight:bold;
 font-size:20px;
+display:inline-block;
 ">
 💌 Send My Answer
 </a>
 
 </div>
 `;
-  
