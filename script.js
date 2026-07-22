@@ -51,7 +51,30 @@ yesBtn.style.padding = (15 + clickCount * 2) + "px " + (30 + clickCount * 4) + "
 });
 
 yesBtn.addEventListener("click", () => {
+for (let i = 0; i < 80; i++) {
 
+    const heart = document.createElement("div");
+
+    heart.innerHTML = "❤️";
+
+    heart.style.position = "fixed";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.top = "100vh";
+    heart.style.fontSize = (20 + Math.random() * 30) + "px";
+    heart.style.transition = "3s linear";
+    heart.style.pointerEvents = "none";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.style.top = "-100px";
+        heart.style.opacity = "0";
+    }, 100);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 3200);
+}
     document.body.innerHTML = `
     <div style="
         height:100vh;
@@ -66,9 +89,11 @@ yesBtn.addEventListener("click", () => {
         font-family:Arial,sans-serif;
     ">
 
-        <h1 style="font-size:60px;">🎉 YAAAAY!! ❤️ 🎉</h1>
+        <h1 style="font-size:60px;">🥳 YAAAAY!! ❤️🥳</h1>
 
-        <h2>I knew it! 🥹💖</h2>
+        <h2>Relationship Status Updated ❤️
+
+Forever Together 🥹💍</h2>
 
         <p style="font-size:22px;margin-top:20px;">
             I love you more than yesterday,<br>
