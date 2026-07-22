@@ -49,38 +49,33 @@ const newSize = 18 + (clickCount * 4);
 yesBtn.style.fontSize = newSize + "px";
 yesBtn.style.padding = (15 + clickCount * 2) + "px " + (30 + clickCount * 4) + "px";
 });
-
 yesBtn.addEventListener("click", () => {
-for (let i = 0; i < 80; i++) {
 
-    const heart = document.createElement("div");
+    for (let i = 0; i < 80; i++) {
 
-    heart.innerHTML = "❤️";
+        const heart = document.createElement("div");
 
-    heart.style.position = "fixed";
-    heart.style.left = Math.random() * 100 + "vw";
-    heart.style.top = "100vh";
-    heart.style.fontSize = (20 + Math.random() * 30) + "px";
-    heart.style.transition = "3s linear";
-    heart.style.pointerEvents = "none";
+        heart.innerHTML = "❤️";
+        heart.style.position = "fixed";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.top = "100vh";
+        heart.style.fontSize = (20 + Math.random() * 30) + "px";
+        heart.style.transition = "3s linear";
+        heart.style.pointerEvents = "none";
 
-    document.body.appendChild(heart);
+        document.body.appendChild(heart);
 
-    setTimeout(() => {
-        heart.style.top = "-100px";
-        heart.style.opacity = "0";
-    }, 100);
+        setTimeout(() => {
+            heart.style.top = "-100px";
+            heart.style.opacity = "0";
+        }, 100);
 
-    setTimeout(() => {
-        heart.remove();
-    }, 3200);
-}
+        setTimeout(() => {
+            heart.remove();
+        }, 3200);
+    }
+
     document.body.innerHTML = `
-    ...
-`;
-    setTimeout(() => {
-    alert("❤️ Thank you for choosing YES! ❤️");
-}, 1500);
     <div style="
         height:100vh;
         display:flex;
@@ -90,15 +85,12 @@ for (let i = 0; i < 80; i++) {
         background:linear-gradient(135deg,#ff9acb,#ff6fa5);
         color:white;
         text-align:center;
-        overflow:hidden;
         font-family:Arial,sans-serif;
     ">
 
         <h1 style="font-size:60px;">🥳 YAAAAY!! ❤️🥳</h1>
 
-        <h2>Relationship Status Updated ❤️
-
-Forever Together 🥹💍</h2>
+        <h2>Relationship Status Updated ❤️<br>Forever Together 🥹💍</h2>
 
         <p style="font-size:22px;margin-top:20px;">
             I love you more than yesterday,<br>
@@ -107,5 +99,9 @@ Forever Together 🥹💍</h2>
 
     </div>
     `;
+
+    setTimeout(() => {
+        alert("❤️ Thank you for choosing YES! ❤️");
+    }, 1500);
 
 });
