@@ -44,7 +44,10 @@ noBtn.addEventListener("click", () => {
     if (clickCount <= funnyTexts.length) {
         noBtn.innerText = funnyTexts[clickCount - 1];
     }
+const newSize = 18 + (clickCount * 4);
 
+yesBtn.style.fontSize = newSize + "px";
+yesBtn.style.padding = (15 + clickCount * 2) + "px " + (30 + clickCount * 4) + "px";
 });
 
 yesBtn.addEventListener("click", () => {
