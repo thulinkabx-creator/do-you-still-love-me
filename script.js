@@ -76,7 +76,10 @@ for (let i = 0; i < 80; i++) {
     }, 3200);
 }
     document.body.innerHTML = `
-    setTimeout(() => {
+    ...
+`;
+
+setTimeout(() => {
     alert("❤️ Thank you for choosing YES! ❤️");
 }, 1500);
     <div style="
